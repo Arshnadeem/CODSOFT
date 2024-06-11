@@ -146,7 +146,7 @@ public class FundTransfer implements UserService {
       
 		//is account no. entered equal to created one for first user?
 		if (accNumber.equalsIgnoreCase(user1.getAcccountNumber())) {
-			System.out.println("Eneter 6 digit Pin !!!");
+			System.out.println("Enter 6 digit Pin !!!");
 			int pin = scanner.nextInt();
 			if (Validate.verifyPin(pin, user1)) {
 				activeAcc = 1;
